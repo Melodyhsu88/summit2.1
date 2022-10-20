@@ -41,7 +41,7 @@
 /* 手機板設定 */
 @media screen and (max-width:767px) {
     a.phone-book-now {
-        font-size: 20px;
+        font-size: 17px;
         font-weight: 700;
         letter-spacing: 1px;
         text-align: center;
