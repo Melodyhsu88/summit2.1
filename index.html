@@ -12,8 +12,58 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/27b4e59bfc.js" crossorigin="anonymous"></script>
+    <script src="js/navbar-scroll.js"></script>
 </head>
 <body>
-    
+    <header>
+        <!-- 導覽列 -->
+        <nav>
+            <input type="checkbox" id="menu-switch">
+            <div class="navbar">
+                <!-- logo -->
+                <h1><a href="index.html"><img src="picture/SUMMIT_1.png" alt="logo"></a></h1>
+                <!-- 漢堡 -->
+                <label for="menu-switch" class="hb">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <!-- 選單 -->
+
+                <ul class="main-menu">
+                    <li><a href="#">行程預定<span class="main-menu-engitem">DESTINATIONS</span></a></li>
+                    <li><a href="#">裝備租借<span class="main-menu-engitem">EQUIPMENTS</span></a></li>
+                    <li><a href="#">關於我們<span class="main-menu-engitem">ABOUT US</span></a></li>
+                    <li><a href="#">馬上預約<span class="main-menu-engitem">BOOK NOW</span></a></li>
+                    <li>
+                        <a class="icon-menu-text" href="#"><i>會員中心</i><span class="main-menu-engitem">MEMBERSHIP</span></a>
+                    </li>
+                    <li class="icon-meun-item">
+                        <a href="#"><i class="fa-solid fa-user" style="color: white"></i></a>
+                    </li>
+                    <li class="search">
+                        <form action="#" method="get" class="serach-bar">
+                            <input type="text" placeholder="點我搜尋...">
+                            <button type="submit"><i class="fa-solid fa-magnifying-glass" style="color:white"></i></button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- 第一屏滿版banner-->
+        <div class="index-banner banner">
+            <div class="banner-pic">
+                <img src="picture/index/photo-banner.jpg" alt="第一屏圖片">
+            </div>
+            <div class="banner-text">
+                <p>願你一生</p>
+                <p>有山可靠 有樹可棲</p>
+                <p>與心愛之人</p>
+                <p>春賞花 夏納涼</p>
+                <p>秋登山 冬掃雪</p>
+            </div>
+        </div>
+    </header>
 </body>
 </html>
