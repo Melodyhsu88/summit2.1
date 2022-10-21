@@ -1,6 +1,6 @@
 /* 移到共同 */
 body {
-    font-family: 'Noto Sans TC', sans-serif, 
+    font-family: "cwTeXYen", sans-serif, 'Noto Sans TC', sans-serif, 
     'Tenor Sans';
 }
 nav {
@@ -199,7 +199,7 @@ h1 img {
         overflow: hidden;
     }
     .book-now-btn::after {
-        content: "";
+        content: '';
         position: absolute;
         bottom: -50%;
         left: 0;
@@ -235,8 +235,15 @@ h1 img {
         display: none;
     }
     .search-bar button {
+        cursor: pointer;
         border: none;
         margin: 0 10px;
         background-color: transparent;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .main-menu {
+        font-size: 17px;
+        line-height: 1;
     }
 }
