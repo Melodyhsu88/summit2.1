@@ -11,12 +11,14 @@
     <link rel="stylesheet" href="css/header-style.css">
     <link rel="stylesheet" href="css/index-style.css">
     <link rel="stylesheet" href="css/footer-style.css">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Tenor+Sans" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Tenor+Sans">
     <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/cwtexyen.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/27b4e59bfc.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.6.1.js"></script>
+    <script src="js/slider.js"></script>
 </head>
 <body>
     <header>
@@ -68,22 +70,31 @@
             <a class="phone-book-now" href="#">馬上預約</a>
         </div>
     </header>
+    <!-- 第二屏about-slider -->
+    <section class="company-value">
+        <div class="company-value-wrap">
+            <div class="value-container">
+                <ul class="company-value-slider">
+                    <li class="value-pic"><img src="picture/index/value/alessandro-erbetta-8oYPewvmhnY-unsplash.jpg" alt="cloud-sea"></li>
+                    <li class="value-pic"><img src="picture/index/value/cloudsea.jpg" alt="cloud-sea"></li>
+                    <li class="value-pic"><img src="picture/index/value/darren-lawrence-rg0zGs5KfaQ-unsplash.jpg" alt="challenge-yourself"></li>
+                    <li class="value-pic"><img src="picture/index/value/s-b-vonlanthen-D75_5tWZDQ4-unsplash (1).jpg" alt="backpack"></li>
+                    <li class="value-pic"><img src="picture/index/value/sunset.jpg" alt="sunset"></li>
+                    <li class="value-pic"><img src="picture/index/value/tadej-skofic-VWxiaKn-lVc-unsplash.jpg" alt="sunrise"></li>
+                    <li class="value-pic"><img src="picture/index/value/alessandro-erbetta-8oYPewvmhnY-unsplash.jpg" alt="cloud-sea"></li>
+                    <li class="value-pic"><img src="picture/index/value/cloudsea.jpg" alt="cloud-sea"></li>
+                    <li class="value-pic"><img src="picture/index/value/darren-lawrence-rg0zGs5KfaQ-unsplash.jpg" alt="challenge-yourself"></li>
+                    <li class="value-pic"><img src="picture/index/value/s-b-vonlanthen-D75_5tWZDQ4-unsplash (1).jpg" alt="backpack"></li>
+                </ul>
+                <ul id="contentButton">
+                    
+                </ul>
+            </div>
+        </div>
+    </section>
 
 
 
-
-
-    <!-- 第二屏 -->
-    <div class="wrap">
-        <ul class="about-slider">
-            <li class="about-pic"><img src="picture/index/about/alessandro-erbetta-8oYPewvmhnY-unsplash.jpg" alt="cloud-sea"></li>
-            <li class="about-pic"><img src="picture/index/about/cloudsea.jpg" alt="cloud-sea"></li>
-            <li class="about-pic"><img src="picture/index/about/darren-lawrence-rg0zGs5KfaQ-unsplash.jpg" alt="challenge-yourself"></li>
-            <li class="about-pic"><img src="picture/index/about/s-b-vonlanthen-D75_5tWZDQ4-unsplash (1).jpg" alt="backpack"></li>
-            <li class="about-pic"><img src="picture/index/about/sunset.jpg" alt="sunset"></li>
-            <li class="about-pic"><img src="picture/index/about/tadej-skofic-VWxiaKn-lVc-unsplash.jpg" alt="sunrise"></li>
-        </ul>
-    </div>
 
 
 
@@ -91,53 +102,135 @@
     <!-- 熱門行程 -->
     <section>
         <h2>熱門行程</h2>
+        <div class="overlay"></div>
+        <div class="product-item-wrap">
+            <a class="product-card" href="#">
+                <div class="card-overlay"></div>
+                <div class="card-info">
+                    <div class="card-title"></div>
+                    <p></p>
+                </div>
+            </a>
+            <a class="product-card" href="#">
+                <div class="card-overlay"></div>
+                <div class="card-info">
+                    <div class="card-title"></div>
+                    <p></p>
+                </div>
+            </a>
+            <a class="product-card" href="#">
+                <div class="card-overlay"></div>
+                <div class="card-info">
+                    <div class="card-title"></div>
+                    <p></p>
+                </div>
+            </a>
+            <a class="product-card" href="#">
+                <div class="card-overlay"></div>
+                <div class="card-info">
+                    <div class="card-title"></div>
+                    <p></p>
+                </div>
+            </a>
+            <a class="product-card" href="#">
+                <div class="card-overlay"></div>
+                <div class="card-info">
+                    <div class="card-title"></div>
+                    <p></p>
+                </div>
+            </a>
+            <a class="product-card" href="#">
+                <div class="card-overlay"></div>
+                <div class="card-info">
+                    <div class="card-title"></div>
+                    <p></p>
+                </div>
+            </a>
+            <a class="product-card" href="#">
+                <div class="card-overlay"></div>
+                <div class="card-info">
+                    <div class="card-title"></div>
+                    <p></p>
+                </div>
+            </a>
+            <a class="product-card" href="#">
+                <div class="card-overlay"></div>
+                <div class="card-info">
+                    <div class="card-title"></div>
+                    <p></p>
+                </div>
+            </a>
+            <a class="product-card" href="#">
+                <div class="card-overlay"></div>
+                <div class="card-info">
+                    <div class="card-title"></div>
+                    <p></p>
+                </div>
+            </a>
+            <a class="product-card" href="#">
+                <div class="card-overlay"></div>
+                <div class="card-info">
+                    <div class="card-title"></div>
+                    <p></p>
+                </div>
+            </a>
+        </div>
     </section>
 
 
 
 
-    <!-- 馬上預約 -->
-    <section>
-        <div class="book-now-pic">
-            <img src="" alt="">
-        </div>
-        <div class="book-now-txt">
-
-        </div>
-        <a class="book-now-btn" href="#"></a>
-    </section>
 
 
 
-    
+
+
     <!-- 主要服務 -->
     <section class="main-service">
-        <h2></h2>
-        <div class="container">
-            <div class="row"></div>
-            <div class="row"></div>
+        <div class="main-service-wrap container">
+            <div class="row">
+                <div class="main-service-pic col-12 col-md-8 col-lg-6">
+                    <div class="equip-pic">
+                        <img src="picture/index/equipment.jpg" alt="equip-rental">
+                    </div>
+                </div>
+                <div class="main-service-txt equip-col col-12 col-md-8 col-lg-6">
+                    <div class="equip-txt">
+                        <h2>租借裝備</h2>
+                        <p>登山所需裝備一站 租借，不必花大錢、不必四處張羅，省時、省力、更省荷包！</p>
+                        <a class="common-btn" href="#">了解更多</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="main-service-pic col-12 col-md-8 col-lg-6">
+                    <div class="lessons-pic">
+                        <img src="picture/index/How to Use a Compass.jpg" alt="course">
+                    </div>
+                </div>
+                <div class="main-service-txt lessons-col col-12 col-md-8 col-lg-6">
+                    <div class="lessons-txt">
+                        <h2>專業課程</h2>
+                        <p>擁抱山的知識！系統性的方式學習登山技巧及注意事項。</p>
+                        <p>課程包含：山難防救注意事項、基本救命術等等。</p>
+                        <a class="common-btn" href="#">了解更多</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- 馬上預約 -->
+    <section class="book-now-wrap">
+        <div class="book-now-container container">
+            <div class="book-now-txt">
+                <h2>馬上預約</h2>
+                <span>LET THE JOURNEY BEGIN<span class="blinking-cursor">|</span></span>
+                <p>隨著山勢高低起伏，登山的人不畏前方的路多曲折，依然一步踩著一步往前，那就是我們對於生命際遇的信念。</p>
+                <p>現在就加入我們的旅程吧!</p>
+                <a class="common-btn" href="#">BOOK NOW</a>
+            </div>
+        </div>  
+    </section>
     <!-- 其他服務 -->
     <section class="support-service">
         <div class="container">
@@ -145,28 +238,28 @@
                 <div class="col">
                     <h3>MEMBERSHIP</h3>
                     <div class="support-pic">
-                        <img src="picture/index/membership.jpg" alt="membership">
+                        <a href="#"><img src="picture/index/membership.jpg" alt="membership"></a>
                     </div>
                     <div class="support-txt">
-                        <p>加入我們一起冒險吧！</p>
+                        <p>加入會員 | 登入</p>
                     </div>
                 </div>
                 <div class="col">
                     <h3>FAQ</h3>
                     <div class="support-pic">
-                        <img src="picture/index/faq.jpg" alt="faq">
+                        <a href="#"><img src="picture/index/faq.jpg" alt="faq"></a>
                     </div>
                     <div class="support-txt">
-                        <p>服務指南、訂單問題 </p>
+                        <p>服務指南 | 訂單問題 </p>
                     </div>
                 </div>
                 <div class="col">
                     <h3>CONTACT US</h3>
                     <div class="support-pic">
-                        <img src="picture/index/contactus.jpg" alt="contact-us">
+                        <a href="#"><img src="picture/index/contactus.jpg" alt="contact-us"></a>
                     </div>
                     <div class="support-txt">
-                        <p>為您竭誠服務，是我們的榮幸!</p>
+                        <p>聯絡我們 | 客製行程</p>
                     </div>
                 </div>
             </div>

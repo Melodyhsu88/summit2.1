@@ -38,34 +38,184 @@
     line-height: 2.5;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, .6);
 }
-/* 第二屏 */
-.wrap {
+/* 第二屏value-slider*/
+.company-value {
+    padding: 50px 0;
     width: 100%;
-    overflow-x: hidden;
+    margin: auto;
+    overflow: hidden;
 }
-.about-slider {
+.company-value-wrap {
+    max-width: 1200px;
+    margin: auto;
+}
+.value-container {
+    margin: auto;
+    outline: 5px solid green;
+}
+ul.company-value-slider {
     display: flex;
-    flex-wrap: nowrap;
-    margin: 0 auto;
+    justify-content: center;
+    position: relative;
 }
-.about-pic {
-    width: 80%;
-    height: 450px;
+li.value-pic {
+    height: 500px;
     margin: 0 auto;
+    justify-self: center;
+    margin: 30px;
 }
-.about-pic img {
+li.value-pic img {
+    border-radius: 5px;
     vertical-align: top;
     object-fit: cover;
+    object-position: center 80%;
     width: 100%;
     height: 100%;
 }
+/* circle button */
+#contentButton{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	height: 50px;
+    box-sizing: border-box;
+    padding: 0 35px;
+}
+#contentButton li{
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #E5E5E5;
+    margin: 0 5px;
+}
+#contentButton li.clicked{
+	background: black;
+}
+/* 熱門行程 */
+
+
+
+
+
+/* 主要服務 */
+section.main-service {
+    padding: 50px 0;
+    background-color: #E5E5E5;
+}
+.main-service-wrap .row {
+    margin-bottom: 50px;
+    justify-content: center;
+}
+.equip-pic, .lessons-pic {
+    position: relative;
+}
+.main-service-pic img {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+    object-fit: cover;
+}
+.equip-pic::before {
+    content: 'RENTALS';
+    background-color: #FCA311;
+    border-radius: 2px;
+    padding: 5px 10px;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    z-index: 1;
+}
+.lessons-pic::before {
+    content: 'LESSONS';
+    background-color: #FCA311;
+    border-radius: 2px;
+    padding: 5px 10px;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    z-index: 1;
+}
+.lessons-txt, .equip-txt {
+    padding: 15px 30px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #E5E5E5;
+    box-sizing: border-box;
+    background-color: #14213D;
+}
+.main-service-txt * {
+    padding-bottom: 25px;
+}
+/* 馬上預約 */
+.book-now-wrap {
+    padding: 50px 0;
+    background: url(../picture/index/book-now-bgimg.jpg);
+    background-position: 70% 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.book-now-txt {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 5%;
+    width: 60%;
+    line-height: 1.5;
+    color: white;
+    text-shadow: 1.5px 1.5px 3px rgba(0, 0, 0, 1);
+}
+.book-now-txt h2, .main-service-txt h2 {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: bolder;
+}
+.book-now-txt .blinking-cursor {
+    margin-left: 5px;
+}
+.book-now-txt * {
+    margin-bottom: 25px;
+}
+/* 共同 */
+.common-btn {
+    display: block;
+    width: fit-content;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    line-height: 1;
+    border: 1px solid white;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+.common-btn::after {
+    content: '';
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transform-origin: bottom center;
+    transition: transform .4s cubic-bezier(0.48, 0, 0.12, 1);
+    transform: skewY(9.3deg) scaleY(0);
+}
+
 /* 其他服務 */
 section.support-service {
-    padding: 30px 0;
+    padding-top: 50px;
 }
 .support-service .col {
     position: relative;
-    margin: 10px 0;
+    margin-bottom: 50px;
 }
 .support-service h3 {
     color: #000000;
@@ -73,10 +223,11 @@ section.support-service {
     border-radius: 2px;
     padding: 5px 10px;
     font-size: 20px;
+    line-height: 1.5;
     font-weight: bolder;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     position: absolute;
-    top: -10px;
+    top: -20px;
     left: 20px;
     z-index: 1;
 }
@@ -84,19 +235,17 @@ section.support-service {
     height: 400px;
     overflow: hidden;
     border-radius: 2px;
-    cursor: pointer;
 }
 .support-pic img {
     width: 100%;
     height: 100%;
     border-radius: 2px;
     object-fit: cover;
-    filter: blur(1.1px);
-    transition: .2s linear;
 }
 .support-txt {
     color: white;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
+    font-size: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
     line-height: 1;
     letter-spacing: 1.5px;
     width: fit-content;
@@ -159,29 +308,48 @@ section.support-service {
         transition: transform .4s cubic-bezier(0.48, 0, 0.12, 1);
         transform: skewY(9.3deg) scaleY(0);
     }
-    a.phone-book-now:active {
-        color: #14213D;
+    a.phone-book-now:focus {
+        color: #000;
         text-shadow: none;
         font-weight: bolder;
-        z-index: 10;
+        z-index: 1;
     }
-    a.phone-book-now:active::after {
+    a.phone-book-now:focus::after {
         transform-origin: bottom center;
         transform: skewY(9.3deg) scaleY(2);
         transition: .5s 0s;
         z-index: -1;
     }
-    .support-pic:active img{
-        transform: scale(1.05);
-        filter: blur(0);
+    /* 共同 */
+    .common-btn:focus {
+        color: #000;
+        text-shadow: none;
+        font-weight: bolder;
+        z-index: 1;
     }
-    .support-pic:active + .support-txt::after, .support-txt:active::after {
+    .common-btn:focus::after {
+        transform-origin: bottom center;
+        transform: skewY(9.3deg) scaleY(2);
+        transition: .5s 0s;
+        z-index: -1;
+    }
+    /* 其他服務 */
+    .support-service .col:focus img{
+        transform: scale(1.05);
+        filter: grayscale(70%);
+        transition: all .3s;
+    }
+    .support-pic:focus + .support-txt::after, .support-txt:focus::after {
         width: 100%;
         transform: scale(1.2);
+    }
+    .support-txt {
+        font-size: 18px;
     }
 }
 /* 平板直式設定 */
 @media screen and (min-width:768px) {
+    /* 第一屏滿版banner */
     .index-banner .banner-text p{
         font-size: 20px;
         line-height: 4;
@@ -189,18 +357,132 @@ section.support-service {
     a.phone-book-now {
         display: none;
     }
-    .support-pic:hover img {
+    /* circle button */
+    #contentButton li{
+        margin: 0 10px;
+    }
+
+
+    /* 主要服務 */
+    .equip-pic::before {
+        font-size: 22px;
+        line-height: 1.5;
+        z-index: 1;
+    }
+    .lessons-pic::before {
+        font-size: 22px;
+        line-height: 1.5;
+        right: 20px;
+        left: auto;
+    }
+    /* 馬上預約 */
+    .book-now-wrap {
+        padding: 80px 0;
+    }
+    .book-now-txt, .main-service-txt {
+        font-size: 20px;
+        line-height: 2;
+    }
+    .book-now-txt h2, .main-service-txt h2 {
+        font-size: 22px;
+        font-weight: bolder;
+    }
+    /* 共同 */
+    .common-btn:hover {
+        color: #000;
+        text-shadow: none;
+        font-weight: bolder;
+        z-index: 1;
+    }
+    .common-btn:hover::after {
+        transform-origin: bottom center;
+        transform: skewY(9.3deg) scaleY(2);
+        transition: .5s 0s;
+        z-index: -1;
+    }
+    /* 其他服務 */
+    .support-service .col:hover img {
         transform: scale(1.05);
-        filter: blur(0);
+        filter: grayscale(70%);
+        transition: all .3s;
     }
     .support-pic:hover + .support-txt::after, .support-txt:hover::after {
         width: 100%;
         transform: scale(1.2);
-
     }
 }
 @media screen and (min-width:1024px){
+    /* 主要服務 */
+    .main-service-wrap .row {
+        justify-content: center;
+        align-items: center;
+    }
+    .equip-pic img, .lessons-pic img {
+        border-radius: 2px;
+    }
+    .equip-txt, .lessons-txt {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        box-sizing: border-box;
+        font-size: 20px;
+        color: #000;
+        background: transparent;
+    }
+    .main-service-txt .common-btn {
+        color: black;
+        font-weight: 600;
+        border: 1px solid  #000;
+    }
+    .main-service-txt .common-btn::after {
+        background-color: black;
+    }
+    .main-service-txt .common-btn:hover {
+        color: white;
+        font-weight: light;
+        z-index: 1;
+    }
+    .main-service-wrap .row:nth-child(2) {
+        flex-direction: row-reverse;
+    }
+    .equip-pic::before {
+        padding: 10px 15px;
+        font-size: 24px;
+        line-height: 1.5;
+        z-index: 1;
+    }
+    .lessons-pic::before {
+        padding: 10px 15px;
+        font-size: 24px;
+        line-height: 1.5;
+        right: 20px;
+        left: auto;
+    }
+    /* 馬上預約 */
+    .book-now-wrap {
+        padding: 100px 0;
+    }
+    .book-now-txt {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+    .book-now-txt h2, .main-service-txt h2{
+        font-size: 28px;
+        line-height: 2;
+        font-weight: bolder;
+    }
 }  
 @media screen and (min-width:1200px){
-  
+    .equip-txt, .lessons-txt {
+        font-size: 22px;
+    }
+    .book-now-wrap {
+        padding: 120px 0;
+    }
+    .book-now-txt {
+        font-size: 22px;
+    }  
+    .book-now-txt h2{
+        font-size: 32px;
+    }
 }

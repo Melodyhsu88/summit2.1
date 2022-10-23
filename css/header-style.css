@@ -3,13 +3,15 @@ body {
     font-family: "cwTeXYen", sans-serif, 'Noto Sans TC', sans-serif, 
     'Tenor Sans';
 }
+
+
 nav {
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1;
+    z-index: 100;
 }
 #menu-switch {
     display: none;
@@ -44,6 +46,8 @@ h1 img {
         position: relative;
         }
     .main-menu {
+        font-size: 20px;
+        line-height: 1;
         position: absolute;
         width: 100%;
         height: 100vh;
@@ -86,7 +90,7 @@ h1 img {
         display: none;
     }
     .main-menu-engitem {
-        font-size: medium;
+        font-size: 16px;
         margin-left: 10px;
     }
     li.search {
@@ -170,6 +174,7 @@ h1 img {
         width: fit-content;
     }
     .main-menu {
+        font-size: 18px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -212,9 +217,9 @@ h1 img {
         transform: skewY(9.3deg) scaleY(0);
     }
     .book-now-btn:hover span:first-child {
-        color: #14213D;
+        color: #000;
         font-weight: bolder;
-        z-index: 10;
+        z-index: 1;
     }
     .book-now-btn:hover::after {
         transform-origin: bottom center;
@@ -241,9 +246,14 @@ h1 img {
         background-color: transparent;
     }
 }
+@media screen and (min-width: 1024px) {
+    .main-menu {
+        font-size: 20px;
+    }
+}
 @media screen and (min-width: 1200px) {
     .main-menu {
-        font-size: 17px;
+        font-size: 22px;
         line-height: 1;
     }
 }
