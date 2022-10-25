@@ -1,6 +1,10 @@
+
+    
 $(function swiper() {
+    
     let divWidth = $('.value-container').width()
     let imgCount = $('.company-value-slider li').length
+
 
     for(let i = 0; i < imgCount; i++){
         $('#contentButton').append(`<li></li>`)
@@ -42,4 +46,24 @@ $(function swiper() {
         $(`#contentButton li`).not(`:eq(${index})`).removeClass('clicked')
     }
 });
+
+
+// $(document).ready(function(){
+    
+//     $(window).resize(function(){
+        
+//         function resizeContainer(){
+//             let aspectRatioContainer = divWidth /  $('.value-container').height
+    
+//             let w_width = $(this).width()
+//             let w_height = $(this).height() 
+//             let  aspectRatioWin = $(this).width() / $(this).height() 
+//             aspectRatioContainer = aspectRatioWin
+//         }
+          
+//         })
+
+// });
+    
+
 

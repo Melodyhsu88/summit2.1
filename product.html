@@ -9,19 +9,22 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/header-style.css">
-    <!-- <link rel="stylesheet" href="css/"> -->
+    <link rel="stylesheet" href="css/product.css">
     <link rel="stylesheet" href="css/footer-style.css">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Tenor+Sans">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Tenor+Sans" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/cwtexyen.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.6.1.js"></script>
+    <script src="js/category-bar.js"></script>
+    <script src="js/setfav.js"></script>
     <script src="https://kit.fontawesome.com/27b4e59bfc.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <!-- 導覽列 -->
-        <nav>
+        <nav class="product-nav">
             <input type="checkbox" id="menu-switch">
             <div class="navbar">
                 <!-- logo -->
@@ -34,7 +37,7 @@
                 </label>
                 <!-- 選單 -->
                 <ul class="main-menu">
-                    <li class="main-menu-item"><a href="product.html">行程預定<span class="main-menu-engitem">DESTINATIONS</span></a></li>
+                    <li class="main-menu-item-clicked"><a href="product.html">行程預定<span class="main-menu-engitem">DESTINATIONS</span></a></li>
                     <li class="main-menu-item"><a href="equip.html">裝備租借<span class="main-menu-engitem">EQUIPMENTS</span></a></li>
                     <li class="main-menu-item"><a href="#">關於我們<span class="main-menu-engitem">ABOUT US</span></a></li>
                     <li class="book-now-btn"><a href="booknow.html"><span>馬上預約</span><span class="main-menu-engitem">BOOK NOW</span></a></li>
@@ -53,16 +56,168 @@
                 </ul>
             </div>
         </nav>
-
-
-
-
-
+        <div class="banner">
+            <div class="banner-pic">
+                <img src="picture/product-picture/product-banner.jpg" alt="第一屏圖片">
+            </div>
+            <h2>DESTINATIONS</h2>
+        </div>
     </header>
-
-
-
-    
+    <main>
+        <section class="category">
+            <ul class="category-menu">
+                <li><a class="type-btn" href="#">初階</a></li>
+                <li><a class="type-btn" href="#">中階</a></li>
+                <li><a class="type-btn" href="#">進階</a></li>
+                <li><a class="type-btn" href="#">包團</a></li>
+            </ul>
+        </section>
+        <section class="product">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                    <div class="col">
+                        <div class="merch-pic">
+                            <a href="#"><img src="picture/index/product/shuiyangforest.jpg" alt="水漾森林"></a>
+                            <div class="merch-pic-info">
+                                <a href="product-info.html">了解更多</a>
+                            </div>
+                        </div>
+                        <div class="merchtxt">
+                            <div class="merch-name">
+                                <h3 class="txt-content">水漾森林<br>遠離塵囂的人間仙境</h3>
+                                <div class="heart">
+                                    <img class="heart-pic" src="picture/product-picture/heart_white.png" alt="加入收藏">
+                                </div>
+                            </div>
+                            <div class="price">$4,180</div>
+                            <div class="remark">#森林系 #網美景點 #初階</div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="merch-pic">
+                            <a href="#"><img src="picture/index/product/jiaminglake.jpg" alt="嘉明湖"></a>
+                            <div class="merch-pic-info">
+                                <a href="product-info.html">了解更多</a>
+                            </div>
+                        </div>
+                        <div class="merchtxt">
+                            <div class="merch-name">
+                                <h3 class="txt-content">嘉明湖<br>天使的眼淚</h3>
+                                <div class="heart">
+                                    <img class="heart-pic" src="picture/product-picture/heart_white.png" alt="加入收藏">
+                                </div>
+                            </div>
+                            <div class="price">$6,800 ~ $8,800</div>
+                            <div class="remark">#百岳 #中階 #三天兩夜</div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="merch-pic">
+                            <a href="#"><img src="picture/index/product/Hehuan Mountain North Peak.jpg" alt="合歡北峰+西峰"></a>
+                            <div class="merch-pic-info">
+                                <a href="product-info.html">了解更多</a>
+                            </div>
+                        </div>
+                        <div class="merchtxt">
+                            <div class="merch-name">
+                                <h3 class="txt-content">合歡北峰+西峰<br>七上八下</h3>
+                                <div class="heart">
+                                    <img class="heart-pic" src="picture/product-picture/heart_white.png" alt="加入收藏">
+                                </div>
+                            </div>
+                            <div class="price">$3,500 ~ $4,200</div>
+                            <div class="remark">#初階 #單攻 #免登山證</div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="merch-pic">
+                            <a href="#"><img src="picture/index/product/DabajianMt..jpg" alt="大霸群峰"></a>
+                            <div class="merch-pic-info">
+                                <a href="product-info.html">了解更多</a>
+                            </div>
+                        </div>
+                        <div class="merchtxt">
+                            <div class="merch-name">
+                                <h3 class="txt-content">大霸群峰<br>五百元上的神祕山脈</h3>
+                                <div class="heart">
+                                    <img class="heart-pic" src="picture/product-picture/heart_white.png" alt="加入收藏">
+                                </div>
+                            </div>
+                            <div class="price">$7,700</div>
+                            <div class="remark">#百岳 #高階 #三天三夜</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                    <div class="col">
+                        <div class="merch-pic">
+                            <a href="#"><img src="picture/index/product/jadeMt.jpg" alt="玉山"></a>
+                            <div class="merch-pic-info">
+                                <a href="product-info.html">了解更多</a>
+                            </div>
+                        </div>
+                        <div class="merchtxt">
+                            <div class="merch-name">
+                                <h3 class="txt-content">玉山<br>台灣第一高峰</h3>
+                                <div class="heart">
+                                    <img class="heart-pic" src="picture/product-picture/heart_white.png" alt="加入收藏">
+                                </div>
+                            </div>
+                            <div class="price">$3,500 ~ $4,200</div>
+                            <div class="remark">#百岳 #中階  #需抽山屋</div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="merch-pic">
+                            <a href="#"><img src="picture/index/product/mt.sylvia.jpg" alt="雪山"></a>
+                            <div class="merch-pic-info">
+                                <a href="product-info.html">了解更多</a>
+                            </div>
+                        </div>
+                        <div class="merchtxt">
+                            <div class="merch-name">
+                                <h3 class="txt-content">雪山主東峰<br>台灣第二高峰</h3>
+                                <div class="heart">
+                                    <img class="heart-pic" src="picture/product-picture/heart_white.png" alt="加入收藏">
+                                </div>
+                            </div>
+                            <div class="price">$6,000</div>
+                            <div class="remark">#百岳 #中階 #需抽山屋</div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="merch-pic">
+                            <a href="#"><img src="picture/index/product/mianyue.jpg" alt="眠月線"></a>
+                            <div class="merch-pic-info">
+                                <a href="product-info.html">了解更多</a>
+                            </div>
+                        </div>
+                        <div class="merchtxt">
+                            <div class="merch-name">
+                                <h3 class="txt-content">眠月線<br>森林鐵道失落的秘境
+                                </h3>
+                                <div class="heart">
+                                    <img class="heart-pic" src="picture/product-picture/heart_white.png" alt="加入收藏">
+                                </div>
+                            </div>
+                            <div class="price">$5,000</div>
+                            <div class="remark">#網美景點 #初階 #森林系</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- pagination -->
+        <ul class="pagination">
+            <li><button type="button"><i class="fa-sharp fa-solid fa-chevron-left"></i></button></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><button type="button"><i class="fa-sharp fa-solid fa-chevron-right"></i></button></li>
+        </ul>   
+    </main>
     <!-- footer -->
     <footer>
        <div class="footer-container container">
