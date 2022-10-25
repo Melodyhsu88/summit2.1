@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/header-style.css">
-    <!-- <link rel="stylesheet" href="css/"> -->
+    <link rel="stylesheet" href="css/equip.css">
     <link rel="stylesheet" href="css/footer-style.css">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Tenor+Sans">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Tenor+Sans" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/cwtexyen.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +21,7 @@
 <body>
     <header>
         <!-- 導覽列 -->
-        <nav>
+        <nav class="rentals-nav">
             <input type="checkbox" id="menu-switch">
             <div class="navbar">
                 <!-- logo -->
@@ -35,7 +35,7 @@
                 <!-- 選單 -->
                 <ul class="main-menu">
                     <li class="main-menu-item"><a href="product.html">行程預定<span class="main-menu-engitem">DESTINATIONS</span></a></li>
-                    <li class="main-menu-item"><a href="equip.html">裝備租借<span class="main-menu-engitem">EQUIPMENTS</span></a></li>
+                    <li class="main-menu-item-clicked"><a href="equip.html">裝備租借<span class="main-menu-engitem">EQUIPMENTS</span></a></li>
                     <li class="main-menu-item"><a href="#">關於我們<span class="main-menu-engitem">ABOUT US</span></a></li>
                     <li class="book-now-btn"><a href="booknow.html"><span>馬上預約</span><span class="main-menu-engitem">BOOK NOW</span></a></li>
                     <li class="icon-menu-text" >
@@ -53,15 +53,120 @@
                 </ul>
             </div>
         </nav>
-
-
-
+        <!-- 第一屏滿版banner-->
+        <div class="banner">
+            <div class="banner-pic">
+                <img src="picture/rentals-picture/banner (1).jpg" alt="第一屏圖片">
+            </div>
+            <h2>EQUIP-RENTALS</h2>
+        </div>
     </header>
-
-
-
-
-    
+    <!-- essentials -->
+    <section class="equip-wrap">
+        <h3>ESSENTIALS</h3>
+        <div class="mainequip-container container">
+            <div class="row">
+                <div class="col col-12 col-md-4 col-lg-4">
+                    <div class="pic">
+                        <a href="#"><img src="picture/rentals-picture/Women's Mountain 600 4_5_ Rich Brown.jpg" alt="登山鞋"></a>
+                    </div>
+                    <a class="type-btn" href="#">登山鞋</a>
+                </div>
+                <div class="col col-12 col-md-4 col-lg-4">
+                    <div class="pic">
+                        <a href="#"><img src="picture/rentals-picture/backpack.jpg" alt="登山包"></a>
+                    </div>
+                    <a class="type-btn" href="#">登山包</a>
+                </div>
+                <div class="col col-12 col-md-4 col-lg-4">
+                    <div class="pic">
+                        <a href="#"><img src="picture/rentals-picture/10 Clever Ways To Use Trekking Poles.jpg" alt="登山杖"></a>
+                    </div>
+                    <a class="type-btn" href="#">登山杖</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 睡眠系統 -->
+    <section class="sleep-system">
+        <div class="sleep-system-container container">
+            <div class="row">
+                <div class="col col-6 col-md-3 col-lg-3">
+                    <div class="pic sleep-item-pic">
+                        <a href="#"><img src="picture/rentals-picture/tent.jpg" alt="登山帳"></a>
+                    </div>
+                    <a class="type-btn" href="#">登山帳</a>
+                </div>
+                <div class="col col-6 col-md-3 col-lg-3">
+                    <div class="pic sleep-item-pic">
+                        <a href="#"><img src="picture/rentals-picture/sleepingpad.jpg" alt="睡墊"></a>
+                    </div>
+                    <a class="type-btn" href="#">睡墊</a>
+                </div>
+                <div class="col col-6 col-md-3 col-lg-3">
+                    <div class="pic sleep-item-pic">
+                        <a href="#"><img src="picture/rentals-picture/sleeping bag.jpg" alt="睡袋"></a>
+                    </div>
+                    <a class="type-btn" href="#">睡袋</a>
+                </div>
+                <div class="txt col col-12 col-md-9 col-lg-3">
+                    <h3>睡眠系統</h3>
+                    <p>你終究要睡個好覺，那何不一開始就用好的睡眠裝備！</p>
+                    <a class="common-btn" href="">我要租借</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 其他熱門裝備 -->
+    <section class="popequip">
+        <h3>HOT ITEMS</h3>
+        <div class="popequip-container container">
+            <div class="row row-cols-1 row-cols-md-3">
+                <div class="col">
+                    <div class="popequip-item">
+                        <div class="pic popequip-item-pic">
+                            <a href="#">
+                                <img src="picture/rentals-picture/headlamp.jpg" alt="頭燈">
+                            </a>
+                        </div>
+                        <a class="type-btn" href="#">頭燈</a>
+                    </div>
+                    <div class="popequip-txt">
+                        <h4>太陽下山後為你帶來亮光</h4>
+                        <p class="price">$2,000起/天</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="popequip-item">
+                        <div class="pic popequip-item-pic">
+                            <a href="#">
+                                <img src="picture/rentals-picture/summitpack.jpg" alt="攻頂包">
+                            </a>
+                        </div>
+                        <a class="type-btn" href="#">攻頂包</a>
+                    </div>
+                    <div class="popequip-txt">
+                        <h4>輕鬆攻頂享受大景</h4>
+                        <p class="price">$800起/晚</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="popequip-item">
+                        <div class="pic popequip-item-pic">
+                            <a href="#">
+                                <img src="picture/rentals-picture/stove.jpg" alt="高山爐具">
+                            </a>
+                        </div>
+                        <a class="type-btn" href="#">高山爐具</a>
+                    </div>
+                    <div class="popequip-txt">
+                        <h4>在旅途中煮一頓熱騰騰的美味佳餚</h4>
+                        <p class="price">$500起/晚</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- footer -->
     <footer>
        <div class="footer-container container">

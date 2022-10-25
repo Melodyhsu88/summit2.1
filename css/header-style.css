@@ -3,8 +3,6 @@ body {
     font-family: "cwTeXYen", sans-serif, 'Noto Sans TC', sans-serif, 
     'Tenor Sans';
 }
-
-
 nav {
     width: 100%;
     position: fixed;
@@ -12,6 +10,7 @@ nav {
     left: 0;
     right: 0;
     z-index: 100;
+    transition: .6s;
 }
 #menu-switch {
     display: none;
@@ -33,7 +32,6 @@ h1 img {
     color: white;
     line-height: 1;
 }
-
 /* 手機板設定 */
 @media screen and (max-width:767px) {
     .hb {
@@ -120,7 +118,6 @@ h1 img {
         line-height: 1;
         color: white;
     }
-    
     /* 漢堡設定 */
     .hb span {
         width: 32px;
@@ -174,7 +171,7 @@ h1 img {
         width: fit-content;
     }
     .main-menu {
-        font-size: 18px;
+        line-height: 1.5;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -186,7 +183,7 @@ h1 img {
         content: '';
         width: 0%;
         height: 2px;
-        background-color: #14213D;
+        background-color: white;
         position: absolute;
         left: 0;
         right: 0;

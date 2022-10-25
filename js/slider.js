@@ -1,4 +1,4 @@
-$(function () {
+$(function swiper() {
     let divWidth = $('.value-container').width()
     let imgCount = $('.company-value-slider li').length
 
@@ -42,3 +42,4 @@ $(function () {
         $(`#contentButton li`).not(`:eq(${index})`).removeClass('clicked')
     }
 });
+

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/header-style.css">
     <link rel="stylesheet" href="css/index-style.css">
     <link rel="stylesheet" href="css/footer-style.css">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Tenor+Sans">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Tenor+Sans" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/cwtexyen.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,6 +19,7 @@
     <script src="https://kit.fontawesome.com/27b4e59bfc.js" crossorigin="anonymous"></script>
     <script src="js/jquery-3.6.1.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/nav-bar.js"></script>
 </head>
 <body>
     <header>
@@ -91,105 +92,141 @@
             </div>
         </div>
     </section>
-
-
-
-
-
-
-
     <!-- 熱門行程 -->
     <section class="pop-product">
-        <h2>熱門行程</h2>
-        <div class="overlay"></div>
-        <div class="product-item-wrap">
-            <a class="product-card" href="product-info.html">
-                <div class="card-overlay"></div>
-                <div class="card-info">
-                    <h3 class="card-title">大霸群峰</h3>
-                    <p>五百元上的神祕山脈</p>
-                </div>
-            </a>
-            <a class="product-card" href="product-info.html">
-                <div class="card-overlay"></div>
-                <div class="card-info">
-                    <h3 class="card-title">合歡北峰+西峰</h3>
-                    <p>新手必爬入們百岳</p>
-                </div>
-            </a>
-            <a class="product-card" href="product-info.html">
-                <div class="card-overlay"></div>
-                <div class="card-info">
-                    <h3 class="card-title">玉山</h3>
-                    <p>台灣最高峰</p>
-                </div>
-            </a>
-            <a class="product-card" href="product-info.html">
-                <div class="card-overlay"></div>
-                <div class="card-info">
-                    <h3 class="card-title">嘉明湖</h3>
-                    <p>天使的眼淚</p>
-                </div>
-            </a>
-            <a class="product-card" href="product-info.html">
-                <div class="card-overlay"></div>
-                <div class="card-info">
-                    <h3 class="card-title">眠月線</h3>
-                    <p>森林鐵道失落的秘境</p>
-                </div>
-            </a>
-            <a class="product-card" href="product-info.html">
-                <div class="card-overlay"></div>
-                <div class="card-info">
-                    <h3 class="card-title">雪山主東峰</h3>
-                    <p>台灣第二高峰</p>
-                </div>
-            </a>
-            <a class="product-card" href="product-info.html">
-                <div class="card-overlay"></div>
-                <div class="card-info">
-                    <h3 class="card-title">水漾森林</h3>
-                    <p>遠離塵囂的人間仙境</p>
-                </div>
-            </a>
-            <a class="product-card" href="product-info.html">
-                <div class="card-overlay"></div>
-                <div class="card-info">
-                    <h3 class="card-title">大霸群峰</h3>
-                    <p>五百元上的神祕山脈</p>
-                </div>
-            </a>
-            <a class="product-card" href="product-info.html">
-                <div class="card-overlay"></div>
-                <div class="card-info">
-                    <h3 class="card-title">合歡北峰+西峰</h3>
-                    <p>新手必爬入們百岳</p>
-                </div>
-            </a>
-            <a class="product-card" href="product-info.html">
-                <div class="card-overlay"></div>
-                <div class="card-info">
-                    <h3 class="card-title">玉山</h3>
-                    <p>台灣最高峰</p>
-                </div>
-            </a>
-        </div>
-        <div class="btn-pannel">
-            <button><i class="fa-thin fa-circle-caret-left"></i></button>
-            <button><i class="fa-thin fa-circle-caret-right"></i></button>
+        <h2>POPULAR DESTINATION</h2>
+        <div class="product-container">
+            <ul class="product-item-row">
+                <li class="product-card">
+                    <a href="product-info.html">
+                        <div class="card-overlay"></div>
+                        <div class="product-card-pic">
+                            <img src="/picture/index/product/DabajianMt..jpg" alt="大霸群峰">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">大霸群峰</h3>
+                            <p>五百元上的神祕山脈</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="product-card">
+                    <a href="product-info.html">
+                        <div class="card-overlay"></div>
+                        <div class="product-card-pic">
+                            <img src="picture/index/product/Hehuan Mountain North Peak.jpg" alt="合歡北峰+西峰">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">合歡北峰+西峰</h3>
+                            <p>新手必爬入們百岳</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="product-card">
+                    <a href="product-info.html">
+                        <div class="card-overlay"></div>
+                        <div class="product-card-pic">
+                            <img src="picture/index/product/jadeMt.jpg" alt="玉山">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">玉山</h3>
+                            <p>台灣最高峰</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="product-card">
+                    <a href="product-info.html">
+                        <div class="card-overlay"></div>
+                        <div class="product-card-pic">
+                            <img src="picture/index/product/jiaminglake.jpg" alt="嘉明湖">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">嘉明湖</h3>
+                            <p>天使的眼淚</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="product-card">
+                    <a href="product-info.html">
+                        <div class="card-overlay"></div>
+                        <div class="product-card-pic">
+                            <img src="picture/index/product/mianyue.jpg" alt="眠月線">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">眠月線</h3>
+                            <p>森林鐵道失落的秘境</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="product-card">
+                    <a href="product-info.html">
+                        <div class="card-overlay"></div>
+                        <div class="product-card-pic">
+                            <img src="picture/index/product/mt.sylvia.jpg" alt="雪山主東峰">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">雪山主東峰</h3>
+                            <p>台灣第二高峰</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="product-card">
+                    <a href="product-info.html">
+                        <div class="card-overlay"></div>
+                        <div class="product-card-pic">
+                            <img src="picture/index/product/shuiyangforest.jpg" alt="水漾森林">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">水漾森林</h3>
+                            <p>遠離塵囂的人間仙境</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="product-card">
+                    <a href="product-info.html">
+                        <div class="card-overlay"></div>
+                        <div class="product-card-pic">
+                            <img src="/picture/index/product/DabajianMt..jpg" alt="大霸群峰">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">大霸群峰</h3>
+                            <p>五百元上的神祕山脈</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="product-card">
+                    <a href="product-info.html">
+                        <div class="card-overlay"></div>
+                        <div class="product-card-pic">
+                            <img src="picture/index/product/Hehuan Mountain North Peak.jpg" alt="合歡北峰+西峰">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">合歡北峰+西峰</h3>
+                            <p>新手必爬入們百岳</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="product-card">
+                    <a href="product-info.html">
+                        <div class="card-overlay"></div>
+                        <div class="product-card-pic">
+                            <img src="picture/index/product/jadeMt.jpg" alt="玉山">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">玉山</h3>
+                            <p>台灣最高峰</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="btn-pannel">
+                <button type="button"><i class="fa-sharp fa-solid fa-chevron-left fa-2x"></i></button>
+                <button type="button"><i class="fa-sharp fa-solid fa-chevron-right fa-2x"></i></button>
+            </div>
         </div>
     </section>
-
-
-
-
-
-
-
-
-
     <!-- 主要服務 -->
     <section class="main-service">
+        <h2>OUR SERVICES</h2>
         <div class="main-service-wrap container">
             <div class="row">
                 <div class="main-service-pic col-12 col-md-8 col-lg-6">
@@ -199,7 +236,7 @@
                 </div>
                 <div class="main-service-txt equip-col col-12 col-md-8 col-lg-6">
                     <div class="equip-txt">
-                        <h2>租借裝備</h2>
+                        <h3>租借裝備</h3>
                         <p>登山所需裝備一站 租借，不必花大錢、不必四處張羅，省時、省力、更省荷包！</p>
                         <a class="common-btn" href="equip.html">了解更多</a>
                     </div>
@@ -213,7 +250,7 @@
                 </div>
                 <div class="main-service-txt lessons-col col-12 col-md-8 col-lg-6">
                     <div class="lessons-txt">
-                        <h2>專業課程</h2>
+                        <h3>專業課程</h3>
                         <p>擁抱山的知識！系統性的方式學習登山技巧及注意事項。</p>
                         <p>課程包含：山難防救注意事項、基本救命術等等。</p>
                         <a class="common-btn" href="lessons.html">了解更多</a>
