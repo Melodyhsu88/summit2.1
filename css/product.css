@@ -1,0 +1,36 @@
+/* banner */
+nav.product-nav {
+    background-color: #14213D;
+}
+.banner {
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+.banner-pic {
+    margin: auto;
+    height: 50vh;
+}
+.banner-pic img {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+    object-fit: cover;
+    object-position: center 40%;
+}
+.banner h2 {
+    position: absolute;
+    bottom: 18px;
+    left: 18px;
+    margin: auto;
+    color: white;
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: bold;
+    letter-spacing: 2px;
+    width: fit-content;
+}
+/* 導覽列 */
+li.main-menu-item-clicked {
+    border-bottom: 2px solid white;
+}
