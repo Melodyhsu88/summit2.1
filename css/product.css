@@ -129,8 +129,8 @@ section.product {
     justify-content: space-between;
     align-items: center;
 }
-.heart {
-    margin: auto 0;
+.fa-heart {
+    color: #ccc;
 }
 .merchtxt {
     padding: 15px 5px 15px;
@@ -180,6 +180,7 @@ section.product {
     width: 100%;
 }
 .pagination button {
+    color: black;
     border: none;
     background: transparent;
 }

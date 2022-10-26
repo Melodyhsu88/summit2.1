@@ -1,15 +1,19 @@
-function switchFavorite(){
-    let heartChange = document.querySelector('.heart-pic');
-    if(heartChange.alt=="加入收藏"){
-      heartChange.src = "../picture/product-picture/heart_red.png";
-      window.alert("加入收藏成功");
-      heartChange.alt = "取消收藏";
-    }else{
-      heartChange.src = "../picture/product-picture/heart_white.png";
-      heartChange.alt = "加入收藏";
-    }
+let fav = true;
+$('.fa-heart').click(function(){
+  if(fav == true){
+    $(this).css("color", "red")
+    alertTest()
+    fav = false;
+  }else{
+    $(this).css("color", "#ccc")
+    fav = true;
   }
-  function init(){
-    document.querySelector('.heart-pic').onclick = switchFavorite();
-  }
-  window.addEventListener("load", init, false);
+  
+});
+function alertTest() {
+  Swal.fire(
+      "成功加入我的最愛",
+      "快來爬山~",
+      'success',
+  );
+}

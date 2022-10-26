@@ -120,19 +120,22 @@ section.pop-product h2 {
 .product-container {
     position: relative;
     margin: auto;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
+    height: 350px;
 }
 ul.product-item-row {
     width: fit-content;
     /* overflow: hidden; */
     white-space: nowrap;
-    position: relative;
+    position: absolute;
+    left: 0;
+    right: 0;
     margin: auto;
 }
 li.product-card {
     display: inline-block;
-    width: 450px;
-    min-height: 299px;
+    width: 400px;
+    max-height: 299px;
     margin-right: 10px;
     transition: all 350ms ease-out 0s;
     overflow: hidden;
@@ -140,6 +143,7 @@ li.product-card {
     border-radius: 5px;
 }
 li.product-card a {
+    margin: auto;
     position: relative;
     text-align: center;
     text-decoration: none;
@@ -173,15 +177,16 @@ li.product-card:hover .card-overlay, li.product-card:focus .card-overlay {
     transition: all 350ms ease-out 0s;
 }
 .card-info {
-    width: fit-content;
+    width: 100%;
     font-size: 20px;
     text-align: center;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, .6);
-    width: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: 10%;
     left: 0;
     right: 0;
+    margin: auto;
+    outline: 5px green;
 }
 .card-title {
     font-size: 24px;
@@ -193,11 +198,11 @@ li.product-card:hover .card-overlay, li.product-card:focus .card-overlay {
     left: 0;
     right: 0;
     margin: 0 auto;
-    bottom: -50px;
+    bottom: 15%;
     text-align: center;
 }
 .btn-pannel button{
-    margin: 0 100px;
+    margin: 0 50px;
     background-color: transparent;
     color: black;
     border: none;
@@ -456,6 +461,10 @@ section.support-service {
         z-index: -1;
     }
     /* 熱門產品 */
+    li.product-card {
+        width: 320px;
+        min-height: 200px;
+    }
     .btn-pannel button{
         margin: 0 30px;
     }
@@ -494,6 +503,11 @@ section.support-service {
     /* 熱門行程 */
     section.pop-product h2 {
         font-size: 48px;
+    }.btn-pannel {
+        bottom: 10px;
+    }
+    .fa-sharp {
+        font-size: 24px;
     }
     /* 主要服務 */
     section.main-service h2 {
