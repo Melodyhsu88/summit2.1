@@ -1,6 +1,6 @@
 window.addEventListener("load", function(){
 
-    let rowWidth = $('.product-card').width()
+    let rowWidth = $('.product-card').width() + 15
     // console.log(rowWidth)
     let curIndex = 0;
 
