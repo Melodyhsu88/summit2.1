@@ -4,7 +4,7 @@ window.addEventListener("load", function(){
     // console.log(rowWidth)
     let curIndex = 0;
 
-        
+    document.getElementById("btnRight").disabled = true;
     //-----------------------------------------btnLeft.onclick
     $("#btnLeft").click(function(){
         curIndex--;
