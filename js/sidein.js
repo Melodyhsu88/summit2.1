@@ -7,8 +7,6 @@ $(function(){
         let sld = $(this).offset().top;
         if(all >sld){
             $(this).addClass("active");
-        }else{
-            $(this).removeClass("active");
         }
       });
     });

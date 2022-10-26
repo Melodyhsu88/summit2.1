@@ -7,14 +7,14 @@ body {
 .slideIn{
     opacity: 0;
     filter: blur(5px);
-    transform:translateY(-50px) ;
-  }
-  .active{
+    transform:translateX(-50px) ;
+}
+.active{
     opacity: 1;
     filter: blur(0px);
-    transform:translateY(0px) ;
-    transition: 2s ease-in-out;
-  }
+    transform:translateX(0px) ;
+    transition: 1s ease-in-out;
+}
   /* ------------------------------------- */
 nav {
     width: 100%;

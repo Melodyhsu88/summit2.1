@@ -62,7 +62,7 @@ section.category {
     margin: auto;
 }
 .category.touch {
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(4px);
 }
 .type-btn {
     width: fit-content;

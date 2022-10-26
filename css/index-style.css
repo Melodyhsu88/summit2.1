@@ -16,6 +16,11 @@
     vertical-align: top;
     object-fit: cover;
 }
+/* .banner-text.slideIn{
+    opacity: 0;
+    filter: blur(5px);
+    transform:translateY(-50px) ;
+  } */
 .banner-text {
     display: flex;
     flex-direction: column;
@@ -37,6 +42,11 @@
     align-self: flex-start;
     line-height: 2.5;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, .6);
+}
+.index-banner .banner-text p.slideIn {
+    opacity: 0;
+    filter: blur(5px);
+    transform:translateY(-50px) ;
 }
 /* 第二屏value-slider*/
 section.company-value {
@@ -64,6 +74,10 @@ section.company-value::after {
     overflow: hidden;
 }
 ul.company-value-slider {
+    display: flex;
+    position: relative;
+}
+ul.company-value-slider.slideIn {
     display: flex;
     position: relative;
 }
@@ -224,9 +238,31 @@ section.main-service h2 {
     padding-bottom: 30px;
     text-align: center;
 }
+.main-service h2.slideIn {
+    opacity: 0;
+    filter: blur(5px);
+    transform:translateY(-50px) ;
+}
+.main-service h2.slideIn.active {
+    opacity: 1;
+    filter: blur(0px);
+    transform:translateY(0px) ;
+    transition: 1s ease-in-out;
+}
 .main-service-wrap .row {
     margin-bottom: 50px;
     justify-content: center;
+}
+.main-service-wrap div.row.slideIn {
+    opacity: 0;
+    filter: blur(5px);
+    transform:translateY(-50px) ;
+}
+.main-service-wrap div.row.slideIn.active {
+    opacity: 1;
+    filter: blur(0px);
+    transform:translateY(0px) ;
+    transition: 1s ease-in-out;
 }
 .equip-pic, .lessons-pic {
     position: relative;
